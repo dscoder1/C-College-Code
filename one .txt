@@ -1,0 +1,18 @@
+WAP in c++ by using the class name calculator with the following specification 
+Class name-calculator
+data mem or ins varible-private int result
+mem method-calculator() constructor to initilize tyhe result with zero
+void add(int a) to add a with result 
+void sub(int a) to subtract  a from result
+void mul() to multiply a with result
+void div(int a) to divide result by a 
+void  display() to display result
+void clear() to clear result
+
+
+
+
+wap in c++ to print simultaneoud prime number and take the input as entered by user
+
+
+wap to input a three digit number use a method int armstrong(int n) to accept ther number the method returns one if the number is armstrong othrewise zero
