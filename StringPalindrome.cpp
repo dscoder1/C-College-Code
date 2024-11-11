@@ -1,25 +1,32 @@
 #include <iostream>
+#include <string>
 using namespace std;
 int main()
 {
-    string Sentence;
-    int i = 0, j = 0;
-    bool flag = true;
-    cout << "\nEnter Your String: " << endl;
-    getline(cin, Sentence);
-    j = Sentence.size() - 1;
-    while (i < j)
+    int start = 0, last, flag = 1;
+    string Val;
+    cout << "\nEnter A String" << endl;
+    getline(cin, Val);
+    cout << "\nString Is :" << endl;
+    cout << Val << endl;
+    last = Val.length() - 1;
+    while (start < last)
     {
-        if (Sentence[i] != Sentence[j])
+        if (Val[start] != Val[last])
         {
-            flag = false;
+            flag = 0;
+            break;
         }
-        i++;
-        j--;
+        start++;
+        last--;
     }
-    if (flag == true)
-        cout << "\nPalindrome String\n";
+    if (flag == 0)
+    {
+        cout << "\nNot A Palindrome String" << endl;
+    }
     else
-        cout << "\nNot A Palindrome String\n";
+    {
+        cout << "\nA Palindrome String" << endl;
+    }
     return 0;
 }
